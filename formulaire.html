@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Nourriture</title>
+    <link rel="stylesheet" href="ecriture.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>As-tu nourri le chien ?</h2>
+        <form id="formulaire" action="javascript:void(0)">
+            <div>
+                <input type="radio" id="oui" name="data[Donné ?]" value="Oui" required>
+                <label for="oui">Oui</label>
+                <input type="radio" id="demi" name="data[Donné ?]" value="Demie gamelle">
+                <label for="demi">Demie gamelle</label>
+            </div><br>
+            <div>
+                <select id="person" name="data[Personne]" required>
+                    <option value="">Sélectionne une personne</option>
+                    <option value="Xavier">Xav</option>
+                    <option value="Greta">Greta</option>
+                    <option value="Milou">Milou</option>
+                    <option value="Nono">Nono</option>
+                    <option value="Anthony">Anthony</option>
+                    <option value="Autre">Autre</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="additional">Autres :</label>
+                <input type="text" id="additional" name="data[Autres]" placeholder="Commentaires ou autres infos">
+            </div>
+            <div>
+                <button type="submit" id="submitButton">Envoyer</button>
+            </div>
+
+            <!-- Ajout du bouton pour réinitialiser les données -->
+            <div>
+                <button type="button" id="resetButton">Réinitialiser les données</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="ecriture.js"></script>
+</body>
+</html>
