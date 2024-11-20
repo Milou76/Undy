@@ -2,11 +2,11 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    justify-content: center;  /* Centre le contenu horizontalement */
+    align-items: center;      /* Centre le contenu verticalement */
+    height: 100vh;            /* Fait en sorte que le body occupe toute la hauteur de l'écran */
     background-color: #724848;
-    
+    margin: 0;                /* Enlève la marge par défaut du body */
 }
 
 /* Modal Container */
@@ -18,7 +18,7 @@ body {
     text-align: center;
     align-items: center;
     width: 350px;
-    max-width: 100%;
+    max-width: 100%;           /* S'assure que le formulaire est responsive */
 }
 
 /* Heading */
@@ -29,7 +29,7 @@ h2 {
     font-weight: 600;
 }
 
-.gras{
+.gras {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(37, 34, 34);
     font-weight: bold;
@@ -39,7 +39,6 @@ h2 {
 /* Form Group */
 .form-group {
     margin-bottom: 15px;
-    text-align: left;
     text-align: center;
 }
 
@@ -47,7 +46,6 @@ h2 {
     font-size: 16px;
     margin-bottom: 10px;
 }
-
 
 /* Radio buttons */
 input[type="radio"] {
