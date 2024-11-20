@@ -1,1 +1,108 @@
-body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #724848; margin: 0; } [class~="modale-formu"] { background-color: white; padding: 1.875rem; border-radius: 0.75rem; box-shadow: 0rem 0rem 0.9375rem rgba(0, 0, 0, 0.1); text-align: center; width: 21.875rem; max-width: 100%; } h2 { margin-bottom: 1.5625rem; font-size: 1.625rem; color: #333; font-weight: 600; } [class~="gras"]{ font-family: Arial, Helvetica, sans-serif; color: rgb(37, 34, 34); font-weight: bold; text-align: center; } [class~="form-group"] { margin-bottom: 0.9375rem; text-align: left; text-align: center; } [class~="form-group"] p { font-size: 1rem; margin-bottom: 0.625rem; } input[type="radio"] { margin-right: 0.625rem; } [class~="select"] { width: 100%; padding: 0.75rem; font-size: 1rem; color: #333; border: 0.125rem solid #ddd; border-radius: 0.5rem; background-color: #fff; transition: border-color 0.3s, background-color 0.3s ease; } [class~="select"]:hover { border-color: #28a745; background-color: #f8f8f8; } [class~="select"]:focus { outline: none; border-color: #218838; background-color: #e7f5e2; } button { background-color: #28a745; color: white; padding: 0.75rem 1.5625rem; border: none; border-radius: 0.5rem; cursor: pointer; margin-top: 0.9375rem; font-size: 1rem; width: 100%; transition: background-color 0.3s; } button:hover { background-color: #218838; } @media (max-width: 37.5rem) { [class~="modale-formu"] { width: 90%; padding: 1.25rem; } button { font-size: 0.875rem; } }
+/* Global */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #724848;
+    
+}
+
+/* Modal Container */
+.modale-formu {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+    width: 350px;
+    max-width: 100%;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    color: #333;
+    font-weight: 600;
+}
+
+.gras{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(37, 34, 34);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    text-align: center;
+}
+
+.form-group p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+/* Radio buttons */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Select Input */
+.select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #333;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: border-color 0.3s, background-color 0.3s ease;
+}
+
+.select:hover {
+    border-color: #28a745;
+    background-color: #f8f8f8;
+}
+
+.select:focus {
+    outline: none;
+    border-color: #218838;
+    background-color: #e7f5e2;
+}
+
+/* Buttons */
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .modale-formu {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    button {
+        font-size: 14px;
+    }
+}
