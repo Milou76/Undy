@@ -1,0 +1,74 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  height: 100vh;
+  background-color: #724848;
+  margin: 0;
+}
+
+.modale-Affich {
+  background-color: white;
+  padding: 20px; /* Ajuste ce padding à ta convenance */
+  width: auto;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  border-radius: 20px;
+  display: none; /* Initialement cachée */
+  position: fixed; /* Positionner la modale en haut de l'écran */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #5771a5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #374e72;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+/* Button styles for 'Retour à l'accueil' */
+.buttonAccueil {
+  position: absolute;
+  bottom: 20px; /* Distance depuis le bas de la page */
+  left: 50%; /* Positionnement horizontal */
+  transform: translateX(-50%); /* Centrer le bouton horizontalement */
+  padding: 10px 20px; /* Taille intérieure */
+  font-size: 1.2rem; /* Taille du texte */
+  color: white; /* Couleur du texte */
+  background-color: #5771a5; /* Couleur de fond */
+  border-radius: 8px; /* Coins arrondis */
+  cursor: pointer; /* Curseur interactif */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Ombre portée */
+}
+
+.buttonAccueil:hover {
+  background-color: #374e72; /* Couleur plus sombre au survol */
+}

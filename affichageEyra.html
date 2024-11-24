@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affichage des données</title>
+    <link rel="stylesheet" href="lecture.css">
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script defer src="LectureE.js"></script>
+</head>
+<body>
+    <!-- Modale Gamelle Entière Eyra -->
+<div id="modal-eyra" class="modale-Affich" style="display: none;">
+    <div class="modal-content">
+        <h2>Qui a nourri Eyra ?</h2>
+        <p><strong>Quantité donnée :</strong> <span id="modal-donne-eyra">Non spécifié</span></p>
+        <p><strong>Personne :</strong> <span id="modal-personne-eyra">Non spécifié</span></p>
+        <p><strong>Date :</strong> <span id="modal-date-eyra">Non spécifié</span></p>
+        <button class="buttonsend" id="openFormButtonEyra">Nourrir à nouveau Eyra</button>
+    </div>
+</div>
+
+<!-- Modale Demie Gamelle Eyra -->
+<div id="modal-complete-eyra" class="modale-Affich" style="display: none;">
+    <div class="modal-content">
+        <h2>Qui a nourri Eyra ? (Matin)</h2>
+        <p><strong>Quantité donnée :</strong> <span id="modal-donne-matin-eyra">Non spécifié</span></p>
+        <p><strong>Personne :</strong> <span id="modal-personne-matin-eyra">Non spécifié</span></p>
+        <p><strong>Date :</strong> <span id="modal-date-matin-eyra">Non spécifié</span></p>
+        <hr>
+        <h2>Qui a nourri Eyra ? (Soir)</h2>
+        <p><strong>Quantité donnée :</strong> <span id="modal-donne-soir-eyra">Non spécifié</span></p>
+        <p><strong>Personne :</strong> <span id="modal-personne-soir-eyra">Non spécifié</span></p>
+        <p><strong>Date :</strong> <span id="modal-date-soir-eyra">Non spécifié</span></p>
+        <button class="buttonsend" onclick="window.location.href='formulaireE.html'">Nourrir à nouveau Eyra</button>
+    </div>
+</div>
+
+
+    <!-- Bouton Retour -->
+    <button class="buttonAccueil" onclick="window.location.href='affichage.html'">Retour à l'accueil</button>
+</body>
+</html>
