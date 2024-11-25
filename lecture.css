@@ -2,13 +2,14 @@
 body {
   font-family: Arial, sans-serif;
   display: flex;
-  justify-content: center; /* Centrer horizontalement */
-  align-items: center; /* Centrer verticalement */
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background-color: #724848;
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Évite les dépassements inattendus */
+  box-sizing: border-box;
+  text-align: center; /* Centre le texte dans tout le corps */
 }
 
 /* Modale */
@@ -16,7 +17,7 @@ body {
   background-color: white;
   padding: 20px;
   margin: auto;
-  text-align: center;
+  text-align: center; /* Centre tout le texte dans la modale */
   border-radius: 20px;
   display: none; /* Initialement cachée */
   position: fixed;
@@ -31,12 +32,22 @@ body {
 
 .modal-content {
   padding: 15px;
+  margin: 0 auto; /* Centre horizontalement les contenus */
+  text-align: center; /* Centre le texte dans les contenus */
 }
 
 /* Titres */
 h2 {
   font-size: 1.5rem;
   margin-bottom: 15px;
+  text-align: center; /* Texte centré */
+}
+
+/* Paragraphes */
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+  text-align: center; /* Centre le texte */
 }
 
 /* Boutons génériques */
@@ -51,18 +62,12 @@ button {
   transition: background-color 0.3s ease;
   width: 100%; /* Prend toute la largeur sur mobile */
   max-width: 300px; /* Largeur max */
-  margin: 10px auto; /* Espacement */
+  margin: 10px auto; /* Centre horizontalement et ajoute de l'espace */
+  text-align: center; /* Texte centré sur les boutons */
 }
 
 button:hover {
   background-color: #374e72;
-}
-
-/* Ligne de séparation */
-hr {
-  margin: 20px 0;
-  border: 0;
-  border-top: 1px solid #ccc;
 }
 
 /* Bouton de retour à l'accueil */
