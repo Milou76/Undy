@@ -10,45 +10,44 @@
     <div class="modale-formu">
         <h2>Nourrir Eyra :</h2>
         <form id="ticket-form">
-            <p class="gras">Quelle quantité ?</p>
+            <p class="gras">Quelle quantité ?</p>
             <label>
               <input type="radio" name="choixE" value="Gamelle entière" required> Gamelle entière
             </label>
             <label>
               <input type="radio" name="choixE" value="Demie gamelle" required> Demie gamelle
             </label>
-
-
-            <p class="gras">Quel moment ?</p>
-            <label>
-              <input type="radio" name="MomentE" value="Matin" required>Matin
-            </label>
-            <label>
-              <input type="radio" name="MomentE" value="Soir" required>Soir
-            </label>
             <br>
             
-            <p class="gras">Qui a nourri ?</p>
+            <p class="gras">Qui a nourri ?</p>
             <select class="select" name="PersonneE" id="Personne" required>
-              <option value="Antho">Antho</option>
-              <option value="Nono">Nono</option>
-              <option value="Milou">Milou</option>
-              <option value="Grét">Grét</option>
-              <option value="Xav">Xav</option>              
+                <option value="Xav">Xav</option>
+                <option value="Grét">Grét</option>
+                <option value="Milou">Milou</option>
+                <option value="Nono">Nono</option>
+                <option value="Antho">Antho</option>
             </select>
-            
-            
+
+            <!-- Option pour le choix matin/soir qui sera visible seulement si Demie gamelle est sélectionnée -->
+            <div id="momentChoice" style="display: none;">
+                <p class="gras">Quel moment ?</p>
+                <label>
+                  <input type="radio" name="moment" value="matin"> Matin
+                </label>
+                <label>
+                  <input type="radio" name="moment" value="soir"> Soir
+                </label>
+            </div>
+
+            <!-- Champ caché pour l'heure -->
+            <input type="hidden" name="heureE" id="heure">
+
             <!-- Bouton d'envoi -->
             <button id="envoyer" class="buttonsend" type="submit">Envoyer les données</button>
         </form>
-        <!-- Champs pour afficher et enregistrer la date et l'heure -->
         <p id="current-time" class="gras">Date actuelle : Chargement...</p>
-        <input type="hidden" name="HeureE" id="heure">
-
     </div>
-    <button class="buttonAccueil" onclick="window.location.href='affichage.html'">
-      Retour à l'accueil
-    </button>
+    <button class="buttonAccueil" onclick="window.location.href='affichage.html'">Retour à l'accueil</button>
 
     <!-- Charger le JavaScript -->
     <script src="ecritureEyra.js"></script>
