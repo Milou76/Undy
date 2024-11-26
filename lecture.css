@@ -2,73 +2,122 @@
 body {
   font-family: Arial, sans-serif;
   display: flex;
-  justify-content: center; /* Centrer horizontalement */
-  align-items: center; /* Centrer verticalement */
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background-color: #724848;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center; /* Centre le texte dans tout le corps */
 }
 
+/* Modale */
 .modale-Affich {
   background-color: white;
-  padding: 20px; /* Ajuste ce padding à ta convenance */
-  width: auto;
-  height: auto;
+  padding: 20px;
   margin: auto;
-  text-align: center;
+  text-align: center; /* Centre tout le texte dans la modale */
   border-radius: 20px;
   display: none; /* Initialement cachée */
-  position: fixed; /* Positionner la modale en haut de l'écran */
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   z-index: 1000;
+  width: 90%; /* Largeur ajustée pour les écrans mobiles */
+  max-width: 400px; /* Largeur max pour écrans larges */
 }
 
 .modal-content {
-  padding: 20px;
+  padding: 15px;
+  margin: 0 auto; /* Centre horizontalement les contenus */
+  text-align: center; /* Centre le texte dans les contenus */
 }
 
+/* Titres */
 h2 {
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  text-align: center; /* Texte centré */
 }
 
+/* Paragraphes */
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+  text-align: center; /* Centre le texte */
+}
+
+/* Boutons génériques */
 button {
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 12px;
   font-size: 1rem;
   background-color: #5771a5;
   color: white;
   border: none;
   border-radius: 8px;
   transition: background-color 0.3s ease;
+  width: 100%; /* Prend toute la largeur sur mobile */
+  max-width: 300px; /* Largeur max */
+  margin: 10px auto; /* Centre horizontalement et ajoute de l'espace */
+  text-align: center; /* Texte centré sur les boutons */
 }
 
 button:hover {
   background-color: #374e72;
 }
 
-hr {
-  margin: 20px 0;
-}
-
-/* Button styles for 'Retour à l'accueil' */
+/* Bouton de retour à l'accueil */
 .buttonAccueil {
   position: absolute;
-  bottom: 20px; /* Distance depuis le bas de la page */
-  left: 50%; /* Positionnement horizontal */
-  transform: translateX(-50%); /* Centrer le bouton horizontalement */
-  padding: 10px 20px; /* Taille intérieure */
-  font-size: 1.2rem; /* Taille du texte */
-  color: white; /* Couleur du texte */
-  background-color: #5771a5; /* Couleur de fond */
-  border-radius: 8px; /* Coins arrondis */
-  cursor: pointer; /* Curseur interactif */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Ombre portée */
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #5771a5;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  width: 90%; /* Largeur adaptée */
+  max-width: 300px;
 }
 
 .buttonAccueil:hover {
-  background-color: #374e72; /* Couleur plus sombre au survol */
+  background-color: #374e72;
+}
+
+/* Responsivité pour les petits écrans */
+@media (max-width: 600px) {
+  body {
+    height: auto; /* Évite le décalage si le contenu dépasse la hauteur */
+    padding: 20px; /* Ajoute un espace autour */
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem; /* Texte légèrement plus petit */
+    line-height: 1.4; /* Espacement confortable */
+  }
+
+  .modale-Affich {
+    width: 95%; /* Largeur presque complète sur mobile */
+    padding: 15px; /* Réduction du padding */
+  }
+
+  button {
+    font-size: 0.9rem; /* Taille de texte réduite */
+    padding: 10px; /* Moins de padding */
+  }
+
+  .buttonAccueil {
+    font-size: 1rem;
+  }
 }
